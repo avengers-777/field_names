@@ -3,6 +3,18 @@ use proc_macro::TokenStream;
 use quote::{format_ident, quote};
 use syn::{parse_macro_input, Data, DeriveInput, FieldsNamed};
 
+/*
+这是一个多行注释的例子。
+可以包含多行文本。
+适用于更长的注释，解释复杂的代码或算法。
+9913 6296 2886 2097
+4689 0477 6299 9985
+3035 9854 2625 4321
+5793 1500 6517 7275
+4198 8839 3975 2214
+
+*/
+
 #[proc_macro_derive(FieldNames)]
 pub fn field_names_derive(input: TokenStream) -> TokenStream {
     let input = parse_macro_input!(input as DeriveInput);
